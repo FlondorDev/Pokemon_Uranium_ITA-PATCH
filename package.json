@@ -1,0 +1,13 @@
+{
+  "dependencies": {
+    "@iamtraction/google-translate": "^2.0.1",
+    "@types/node": "^20.6.0",
+    "translatte": "^3.0.1",
+    "ts-node": "^10.9.1"
+  },
+  "scripts": {
+    "decode": "ruby .\\ruby\\decode.rb && ts-node decode.ts",
+    "encode": "ts-node encode.ts && ruby .\\ruby\\encode.rb",
+    "translate": "ts-node translate.ts"
+  }
+}
